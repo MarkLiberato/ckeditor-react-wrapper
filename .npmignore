@@ -1,0 +1,28 @@
+# Source files
+src/
+example/
+rollup.config.js
+tsconfig.json
+.eslintrc.js
+
+# Development files
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Test files
+__tests__/
+*.test.*
+*.spec.*
+
+# Documentation (keep these in package)
+# README.md
+# LICENSE

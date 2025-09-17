@@ -1,0 +1,67 @@
+{
+  "name": "ckeditor-react-wrapper",
+  "version": "1.0.9",
+  "type": "module",
+  "description": "A free and open-source CKEditor 5 wrapper for React applications - No license required!",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepare": "npm run build",
+    "build:package": "node scripts/build.js",
+    "postinstall": "node -e \"console.log('\\n🔧 CKEditor React Wrapper installed!\\n\\n✅ Using FREE CKEditor 5 build - No license required!\\n\\nTo prevent duplicated modules error, add this to your webpack config:\\n\\nresolve: {\\n  alias: {\\n    \\'@ckeditor/ckeditor5-build-classic\\': require.resolve(\\'@ckeditor/ckeditor5-build-classic\\')\\n  }\\n}\\n\\nSee README.md for more details.\\n')\""
+  },
+  "keywords": [
+    "ckeditor",
+    "react",
+    "editor",
+    "wysiwyg",
+    "rich-text",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ckeditor-react-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ckeditor-react-wrapper/issues"
+  },
+  "homepage": "https://github.com/yourusername/ckeditor-react-wrapper#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "@ckeditor/ckeditor5-build-classic": "^40.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@ckeditor/ckeditor5-build-classic": "^40.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.6.0",
+    "typescript": "^5.0.0"
+  }
+}
