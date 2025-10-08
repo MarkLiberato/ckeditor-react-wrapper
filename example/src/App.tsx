@@ -8,10 +8,12 @@ function App() {
   const editorRef = useRef<CKEditorRef>(null);
 
   const basicConfig = {
+    licenseKey: 'GPL',
     toolbar: ['heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo'],
   };
 
   const advancedConfig = {
+    licenseKey: 'GPL',
     toolbar: {
       items: [
         'heading', '|',

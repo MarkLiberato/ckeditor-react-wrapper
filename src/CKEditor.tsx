@@ -39,6 +39,7 @@ const CKEditor = forwardRef<CKEditorRef, CKEditorProps>(
 
       try {
         const editor = await EditorClass.create(domElementRef.current, {
+          licenseKey: 'GPL',
           ...config,
           initialData: data,
         });

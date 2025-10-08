@@ -21,7 +21,7 @@ npm install ckeditor-react-wrapper @ckeditor/ckeditor5-build-classic
 yarn add ckeditor-react-wrapper @ckeditor/ckeditor5-build-classic
 ```
 
-> **Important:** This wrapper uses the **free, open-source** CKEditor 5 build (`@ckeditor/ckeditor5-build-classic`) which is available under GPL 2+ license. No commercial license required!
+> **Important:** This wrapper uses the **free, open-source** CKEditor 5 build (`@ckeditor/ckeditor5-build-classic`) which is available under GPL 2+ license. No commercial license required! The wrapper automatically configures `licenseKey: 'GPL'` for all CKEditor instances.
 
 ## Basic Usage
 
@@ -44,6 +44,7 @@ function App() {
         data={data}
         onChange={handleEditorChange}
         config={{
+          licenseKey: 'GPL',
           toolbar: ['heading', '|', 'bold', 'italic', 'link'],
         }}
       />
