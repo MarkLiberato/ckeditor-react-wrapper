@@ -1,6 +1,6 @@
 {
   "name": "ckeditor-react-wrapper",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "A free and open-source CKEditor 5 wrapper for React applications - No license required!",
   "main": "dist/index.js",
